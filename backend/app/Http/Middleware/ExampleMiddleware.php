@@ -15,6 +15,7 @@ class ExampleMiddleware
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        return $next($request)
+            ->header('Access-Control-Allow-Origin', 'X-Requested-With');
     }
 }
