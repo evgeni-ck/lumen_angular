@@ -22,6 +22,8 @@ class UserController extends Controller
     }
 
     public function signup(Request $request) {
+        die('hard2');
+
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email|unique:users',
@@ -41,8 +43,8 @@ class UserController extends Controller
     }
 
     public function signin(Request $request) {
+        die('hard');
         $this->validate($request, [
-            'name' => 'required',
             'email' => 'required|email',
             'password' => 'required'
         ]);

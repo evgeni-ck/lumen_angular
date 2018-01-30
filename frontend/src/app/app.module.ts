@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
+import { MaterialModule } from '../material/material.module';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { routing } from './app.routing';
@@ -16,7 +16,7 @@ import { AuthService } from './auth.service';
   declarations: [
     AppComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
   ],
   imports: [
     BrowserModule,

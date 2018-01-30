@@ -15,7 +15,7 @@
 $router->group(['prefix' => 'api/v1'], function($router)
 {
     $router->post('auth/signup', [
-        'uses' => 'UserController@signup'
+        'uses' => 'AuthController@signup'
     ]);
     $router->post('auth/signin', [
         'uses' => 'AuthController@signin'

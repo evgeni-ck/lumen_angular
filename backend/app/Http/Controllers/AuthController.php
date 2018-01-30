@@ -42,13 +42,12 @@ class AuthController extends Controller
 
     public function signin(Request $request) {
         $this->validate($request, [
-            'name' => 'required',
             'email' => 'required|email',
             'password' => 'required'
         ]);
 
         try {
-            if(!$token =  $this->jwt->attempt($request->only('email', 'password'))) {
+            if(!$token = $this->jwt->attempt($request->only('email', 'password'))) {
                 return response()->json([
                     'error' => 'Invalid credentials!'
             ], 401);
