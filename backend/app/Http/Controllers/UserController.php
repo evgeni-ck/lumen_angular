@@ -22,7 +22,6 @@ class UserController extends Controller
     }
 
     public function signup(Request $request) {
-        var_dump($request->input('email'));die;
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email|unique:users',

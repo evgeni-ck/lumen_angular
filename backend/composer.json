@@ -8,7 +8,8 @@
         "php": ">=7.0",
         "laravel/lumen-framework": "5.5.*",
         "vlucas/phpdotenv": "~2.2",
-        "tymon/jwt-auth": "1.*"
+        "tymon/jwt-auth": "1.*",
+        "palanik/lumen-cors": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
